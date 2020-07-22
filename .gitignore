@@ -1,4 +1,4 @@
 # Project exclude paths
-/base/target/
+*/target/
 .idea
 *.iml
