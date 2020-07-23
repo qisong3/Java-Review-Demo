@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="feature" />
         <module name="basic-concept" />
+        <module name="base" />
+        <module name="feature" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

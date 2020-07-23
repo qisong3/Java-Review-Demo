@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>feature</module>
-        <module>base</module>
+        <module>basic-concept</module>
     </modules>
 
     <build>

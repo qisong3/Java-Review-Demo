@@ -1,74 +1,58 @@
 package cn.errison.polymorphic;
 
+import java.io.Serializable;
+
+/**
+ * 多态，
+ */
 public class Demo1 {
+//
+//    public static void hello(char a){
+//        System.out.println();
+//    }
 
-    public class A {
+//    public static void hello(byte a){
+//        System.out.println("a from byte");
+//    }
+//
+//    public static void hello(short a){
+//        System.out.println("a from short");
+//    }
 
-        public String show() {
-            return ("show() in A");
-        }
+//    public static void hello(int a){
+//        System.out.println("a from int");
+//    }
 
-        public String show(A obj) {
-            return ("show(A) from A");
-        }
-
-        public String show(D obj) {
-            return ("show(D) from A");
-        }
-
+//    public static void hello(long a){
+//        System.out.println("a from long");
+//    }
+//
+//    public static void hello(float a){
+//        System.out.println("a from float");
+//    }
+//
+//    public static void hello(double a){
+//        System.out.println("a from double");
+//    }
+//
+    public static void hello(Character a){
+        System.out.println("a from Character");
     }
 
-    public class B extends A {
-
-        public String show() {
-            return ("show() in B");
-        }
-
-        public String show(C obj) {
-            return ("show(C) from B");
-        }
+    public static void hello(Serializable a){
+        System.out.println("a from Serializable");
     }
 
-    public class C extends B {
-
+    public static void hello(Comparable a){
+        System.out.println("a from Comparable");
     }
 
-    public class D extends C {
-
-    }
-
-
-    public void test1() {
-
-        A a1 = new A();
-        A a2 = new B();
-
-        System.out.println("1--" + a1.show());
-        System.out.println("2--" + a2.show());
-    }
-
-    public void test2() {
-
-        A a1 = new A();
-        A a2 = new B();
-        B b = new B();
-        C c = new C();
-        D d = new D();
-
-        System.out.println("3--" + a2.show(a1));
-        System.out.println("4--" + a2.show(a2));
-
-        System.out.println("5--" + b.show(a1));
-        System.out.println("6--" + b.show(b));
-        System.out.println("7--" + b.show(c));
-        System.out.println("8--" + b.show(d));
+    public static void hello(char... a){
+        System.out.println("a from char...");
     }
 
     public static void main(String[] args) {
-
-        Demo1 demo1 = new Demo1();
-        demo1.test1();
-        demo1.test2();
-
+        char a = '1';
+        hello(a);
     }
 }
