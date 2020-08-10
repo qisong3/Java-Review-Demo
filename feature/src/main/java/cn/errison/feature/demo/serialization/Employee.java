@@ -1,4 +1,4 @@
-package cn.errison.serialization;
+package cn.errison.feature.demo.serialization;
 
 import java.io.*;
 

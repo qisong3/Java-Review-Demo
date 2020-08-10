@@ -1,4 +1,4 @@
-package cn.errison.rmi;
+package cn.errison.feature.demo.rmi;
 
 import java.net.MalformedURLException;
 import java.rmi.AlreadyBoundException;

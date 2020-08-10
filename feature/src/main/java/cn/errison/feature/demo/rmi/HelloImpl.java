@@ -1,4 +1,4 @@
-package cn.errison.rmi;
+package cn.errison.feature.demo.rmi;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;

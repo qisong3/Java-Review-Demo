@@ -1,4 +1,4 @@
-package cn.errison.innerclass;
+package cn.errison.feature.demo.innerclass;
 
 public class Demo1 {
 
