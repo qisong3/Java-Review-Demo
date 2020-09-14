@@ -11,5 +11,19 @@
 
     <artifactId>feature</artifactId>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <showWarnings>true</showWarnings>  <!--输出Annotation Processor中所有级别的日志 -->
+                    <compilerArgument>-Adebug</compilerArgument> <!--传入debug参数 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
 
 </project>

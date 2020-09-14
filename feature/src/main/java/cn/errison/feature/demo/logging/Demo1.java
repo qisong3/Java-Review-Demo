@@ -1,5 +1,6 @@
 package cn.errison.feature.demo.logging;
 
+import java.io.Console;
 import java.io.IOException;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -23,6 +24,7 @@ public class Demo1 {
                     record.getMillis(),
                     record.getLevel().getLocalizedName(),
                     record.getMessage());
+
         }
     }
 
