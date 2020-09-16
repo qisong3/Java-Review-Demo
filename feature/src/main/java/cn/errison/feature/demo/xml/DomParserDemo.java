@@ -9,13 +9,13 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-public class DomParser {
+public class DomParserDemo {
 
     private static void readWithJDOM() {
         try {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(DomParser.class.getClassLoader().getResourceAsStream("students.xml"));
+            Document doc = dBuilder.parse(DomParserDemo.class.getClassLoader().getResourceAsStream("students.xml"));
             doc.getDocumentElement().normalize();
             System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
             NodeList nList = doc.getElementsByTagName("student");

@@ -15,7 +15,7 @@ import java.io.Writer;
 import java.util.Set;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-@SupportedAnnotationTypes({"cn.errison.feature.demo.annotation.CopyRight"})
+//@SupportedAnnotationTypes({"cn.errison.feature.demo.annotation.CopyRight"})
 public class TestProcessor extends AbstractProcessor {
 
 
@@ -31,14 +31,11 @@ public class TestProcessor extends AbstractProcessor {
                     final String className = typeElement.getSimpleName() + "CopyRight";
                     final JavaFileObject fileObject = processingEnv.getFiler().createSourceFile(
                             packageElement.getQualifiedName() + "." + className);
+                    System.out.println("package " + packageElement.getQualifiedName() + ";");
+                    System.out.println( "public class " + className );
+                    System.out.println(fileObject.getNestingKind());
 
-                    try( Writer writter = fileObject.openWriter() ) {
-                        writter.append( "package " + packageElement.getQualifiedName() + ";" );
-                        writter.append( "\\n\\n");
-                        writter.append( "public class " + className + " {" );
-                        writter.append( "\\n");
-                        writter.append( "}");
-                    }
+
                 } catch( final IOException ex ) {
                     processingEnv.getMessager().printMessage(Diagnostic.Kind.ERROR, ex.getMessage());
                 }

@@ -19,6 +19,7 @@
                 <configuration>
                     <showWarnings>true</showWarnings>  <!--输出Annotation Processor中所有级别的日志 -->
                     <compilerArgument>-Adebug</compilerArgument> <!--传入debug参数 -->
+                    <compilerArgument>-proc:none</compilerArgument>
                 </configuration>
             </plugin>
         </plugins>
