@@ -13,11 +13,11 @@ public class Demo3 {
         // method reference
         list.forEach(System.out::println);
         // lambda
-//        list.forEach(value -> System.out.println(value));
-//        // normal
-//        for (String string : list) {
-//            System.out.println(string);
-//        }
+        list.forEach(value -> System.out.println(value));
+        // normal
+        for (String string : list) {
+            System.out.println(string);
+        }
     }
 
     private void testInstanceMethod() {
@@ -28,7 +28,7 @@ public class Demo3 {
         Collections.sort(list, myComparator::compare);
         list.forEach( x -> System.out.println(x));
         // Lambda expression
-//        Collections.sort(list, (a, b) -> myComparator.compare(a, b));
+        Collections.sort(list, (a, b) -> myComparator.compare(a, b));
     }
 
 
@@ -38,11 +38,11 @@ public class Demo3 {
         // Method reference
         list.forEach(MyComparator::count);
         // Lambda expression
-//        list.forEach(value -> value.count());
-//        // normal
-//        for (final MyComparator comparator : list) {
-//            comparator.count();
-//        }
+        list.forEach(value -> value.count());
+        // normal
+        for (final MyComparator comparator : list) {
+            comparator.count();
+        }
     }
 
 
