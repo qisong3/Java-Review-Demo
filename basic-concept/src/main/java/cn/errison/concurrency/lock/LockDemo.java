@@ -1,5 +1,6 @@
 package cn.errison.concurrency.lock;
 
+import java.io.UnsupportedEncodingException;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -40,10 +41,14 @@ public class LockDemo {
 
     }
 
-    public static void main(String[] args) {
-        LockDemo demo = new LockDemo();
-        demo.balance();
-        System.out.println(demo.integer);
+    public static void main(String[] args) throws UnsupportedEncodingException {
+//        LockDemo demo = new LockDemo();
+//        demo.balance();
+//        System.out.println(demo.integer);
+        String string = "\uD83D\uDC47\uD83D\uDC47\uD83D\uDC47";
+        byte[] bytes = string.getBytes("utf-8");
+
+        System.out.println(bytes.length);
 
     }
 }
