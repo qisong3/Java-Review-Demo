@@ -43,7 +43,7 @@ public class CombinationSum {
         Solution solution = new CombinationSum().new Solution();
         int[] array = new int[]{ 2,3,6,7};
         List<List<Integer>> result = solution.combinationSum(array, 7);
-        System.out.println(1);
+        result.stream().forEach(item -> item.stream().forEach(System.out::print));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -53,7 +53,7 @@ public class CombinationSum {
             Arrays.sort(candidates);
             List<List<Integer>> result = new ArrayList<>();
             dfs(candidates, target, 0, new ArrayList<Integer>(), result);
-            return result.stream().distinct().collect(Collectors.toList());
+            return result;
         }
 
         private void dfs(int[] candidates, int target, int index, List<Integer> combine, List<List<Integer>> result) {
@@ -61,7 +61,7 @@ public class CombinationSum {
                 return;
             }
             if (target == 0) {
-                result.add(combine);
+                result.add(new ArrayList<>(combine));
             }
 
             dfs(candidates, target, index + 1, combine, result);
