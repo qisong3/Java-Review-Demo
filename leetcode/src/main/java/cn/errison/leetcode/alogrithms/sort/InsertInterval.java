@@ -57,8 +57,10 @@ public class InsertInterval {
         Solution solution = new InsertInterval().new Solution();
 //        int[][] intervals = new int[][]{{0, 5}, {9, 12}};
 //        int[] newInterval = new int[]{7, 16};
-        int[][] intervals = new int[][]{{0, 9}, {10, 12}};
-        int[] newInterval = new int[]{9, 19};
+//        int[][] intervals = new int[][]{{0, 5}, {9, 12}};
+//        int[] newInterval = new int[]{7, 16};
+        int[][] intervals = new int[][]{{1, 5}};
+        int[] newInterval = new int[]{2, 8};
         int[][] merged = solution.insert(intervals, newInterval);
         for (int[] arr : merged) {
             Arrays.stream(arr).forEach(System.out::print);
