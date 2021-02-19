@@ -1,6 +1,6 @@
 package cn.errison.leetcode.structure.list;
 
-import cn.errison.leetcode.structure.definition.ListNode;
+import cn.errison.leetcode.common.ListNode;
 
 
 /**

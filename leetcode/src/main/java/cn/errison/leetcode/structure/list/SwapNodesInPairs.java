@@ -1,8 +1,6 @@
 package cn.errison.leetcode.structure.list;
 
-import cn.errison.leetcode.structure.definition.ListNode;
-
-import java.util.List;
+import cn.errison.leetcode.common.ListNode;
 
 public class SwapNodesInPairs {
     public static void main(String[] args) {
