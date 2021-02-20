@@ -43,6 +43,10 @@ public class FirstMissingPositive {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int firstMissingPositive(int[] nums) {
+            // 先将复合各个位置的数放到指定位置中去
+            // 如 [0] = 1 , [1] = 2 ..
+            // 对于小于0或者大于取值范围的不处理
+            // 同时如果同一位置放置了正确的数了，就不需要重复放置
             int len = nums.length;
             for (int i = 0; i < len; i++) {
                 while (nums[i] > 0 && nums[i] <= len && nums[nums[i] - 1] != nums[i]) {
@@ -52,6 +56,7 @@ public class FirstMissingPositive {
                 }
 
             }
+            // 遍历不符合下标的
             for (int i = 0; i < len; i++) {
                 if (nums[i] != i + 1) {
                     return i + 1;

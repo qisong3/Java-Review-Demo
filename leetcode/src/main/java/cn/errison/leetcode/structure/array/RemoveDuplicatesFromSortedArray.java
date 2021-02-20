@@ -1,5 +1,7 @@
 package cn.errison.leetcode.structure.array;
 
+import cn.errison.leetcode.common.ArrayUtils;
+
 import java.util.Arrays;
 import java.util.HashSet;
 
@@ -53,13 +55,18 @@ public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
         Solution solution = new RemoveDuplicatesFromSortedArray().new Solution();
         int[] array = new int[]{1,1,2,3,3,4};
-        System.out.println(solution.removeDuplicates(array));
-        System.out.println();
-        Arrays.stream(array).forEach(System.out::println);
+        ArrayUtils.print(array);
+        solution.removeDuplicates(array);
+        ArrayUtils.print(array);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        /**
+         * 快慢指针，
+         * @param nums
+         * @return
+         */
         public int removeDuplicates(int[] nums) {
             if (nums == null || nums.length < 1) {
                 return 0;

@@ -1,7 +1,5 @@
-package cn.errison.leetcode.structure.hashtable;
+package cn.errison.leetcode.undo;
 
-
-import java.util.Arrays;
 
 /**
  * 给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。
@@ -42,19 +40,18 @@ public class MinimumWindowSubstring {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String minWindow(String s, String t) {
-            if (s.length() < t.length()) {
-                return "";
-            }
 
-            char[] charS = s.toCharArray();
-            char[] charT = t.toCharArray();
+            int sLen = s.length();
+            int tLen = t.length();
+
             int[] table = new int[128];
-            for (char c : charT) {
+            for (char c : s.toCharArray()) {
                 table[c]++;
             }
 
-            int[] cover = new int[charT.length];
-            Arrays.sort();
+            int[] cover = new int[tLen];
+
+            return null;
 
         }
     }
