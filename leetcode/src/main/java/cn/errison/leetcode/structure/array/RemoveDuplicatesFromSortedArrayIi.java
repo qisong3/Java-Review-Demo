@@ -1,6 +1,6 @@
 package cn.errison.leetcode.structure.array;
 
-import cn.errison.leetcode.common.ArrayUtils;
+import cn.errison.leetcode.common.util.ArrayUtils;
 
 /**
  * 给定一个增序排列数组 nums ，你需要在 原地 删除重复出现的元素，使得每个元素最多出现两次，返回移除后数组的新长度。

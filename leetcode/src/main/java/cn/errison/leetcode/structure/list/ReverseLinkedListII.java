@@ -1,6 +1,6 @@
 package cn.errison.leetcode.structure.list;
 
-import cn.errison.leetcode.common.ListNode;
+import cn.errison.leetcode.common.definition.ListNode;
 
 public class ReverseLinkedListII {
     public static void main(String[] args) {

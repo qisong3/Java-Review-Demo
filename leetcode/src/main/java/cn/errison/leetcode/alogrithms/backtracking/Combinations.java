@@ -1,11 +1,10 @@
 package cn.errison.leetcode.alogrithms.backtracking;
 
 
-import cn.errison.leetcode.common.ListUtils;
+import cn.errison.leetcode.common.util.ListUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。

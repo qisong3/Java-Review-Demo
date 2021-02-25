@@ -1,5 +1,8 @@
-package cn.errison.leetcode.common;
+package cn.errison.leetcode.common.util;
 
+/**
+ *
+ */
 public class ArrayUtils {
 
 

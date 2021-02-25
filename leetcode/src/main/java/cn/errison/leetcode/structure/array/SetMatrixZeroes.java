@@ -1,7 +1,7 @@
 package cn.errison.leetcode.structure.array;
 
 
-import cn.errison.leetcode.common.ArrayUtils;
+import cn.errison.leetcode.common.util.ArrayUtils;
 
 import java.util.Arrays;
 

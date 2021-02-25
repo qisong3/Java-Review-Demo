@@ -1,4 +1,4 @@
-package cn.errison.leetcode.common;
+package cn.errison.leetcode.common.util;
 
 import java.util.List;
 

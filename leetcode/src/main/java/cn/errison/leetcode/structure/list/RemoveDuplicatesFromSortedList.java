@@ -1,7 +1,6 @@
 package cn.errison.leetcode.structure.list;
 
-import cn.errison.leetcode.common.ListNode;
-import cn.errison.leetcode.common.ListUtils;
+import cn.errison.leetcode.common.definition.ListNode;
 
 /**
  * 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。

@@ -1,6 +1,6 @@
 package cn.errison.leetcode.structure.bitmanipulate;
 
-import cn.errison.leetcode.common.ListUtils;
+import cn.errison.leetcode.common.util.ListUtils;
 
 import java.util.ArrayList;
 import java.util.List;
